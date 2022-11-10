@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="hdzungx-github" 
+                fetch="https://github.com/hdzungx"
+                revision="vic"
+                clone-depth="1" />
+
+        <remote name="hdzungx-gitea"
+                fetch="https://gitea.com/hdzungx"
+                revision="vic" 
+                clone-depth="1" />
+
+        <remote name="hdzungx-codeberg"
+                fetch="https://codeberg.org/hdzungx"
+                revision="vic" 
+                clone-depth="1" />
+
+        <!-- Device Trees -->
+        <project path="device/xiaomi/munch" name="android_device_xiaomi_munch" remote="hdzungx-github" revision="rising" />
+
+        <!-- Vendor Trees-->
+        <project path="vendor/xiaomi/munch" name="android_vendor_xiaomi_munch" remote="hdzungx-gitea" />
+
+        <!-- Kernel-->
+        <project path="kernel/xiaomi/munch" name="EmanuelCN/kernel_xiaomi_sm8250" remote="github" revision="munch" />
+
+        <!-- Firmware-->
+        <project path="vendor/xiaomi/munch-firmware" name="android_vendor_xiaomi_munch-firmware" remote="hdzungx-gitea" />
+
+        <!-- Miui Camera-->
+        <project path="vendor/xiaomi/miuicamera" name="android_vendor_xiaomi_miuicamera" remote="hdzungx-gitea" />
+
+        <!-- KProfiles -->
+        <project path="packages/apps/KProfiles" name="TheParasiteProject/packages_apps_KProfiles" remote="github" revision="main" />
+</manifest>
